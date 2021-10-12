@@ -31,6 +31,7 @@ body {
   padding: 0;
   font-size: 16px;
   min-width: 320px;
+  text-align: center;
 }
 
 .box {

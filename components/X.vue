@@ -35,7 +35,7 @@ export default {
 .cross__line {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: drawCross 0.5s linear forwards;
+  animation: drawCross 0.8s linear forwards;
 }
 
 @keyframes drawCross {

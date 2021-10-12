@@ -49,14 +49,14 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters, mapActions } from 'vuex'
 
-import X from "./X.vue";
-import O from "./O.vue";
-import Popup from "./Popup.vue";
+import X from './X.vue'
+import O from './O.vue'
+import Popup from './Popup.vue'
 
 export default {
-  name: "Table",
+  name: 'Table',
   components: {
     X,
     O,
@@ -68,44 +68,44 @@ export default {
       default: 0,
       required: false,
       validator: (value) => {
-        return typeof value === "number";
+        return typeof value === 'number'
       },
     },
   },
   computed: {
-    ...mapGetters(["currentGameState"]),
+    ...mapGetters(['currentGameState']),
     currentGame() {
       if (!this.routeId) {
-        return this.currentGameState();
+        return this.currentGameState()
       } else {
-        return this.currentGameState(this.routeId);
+        return this.currentGameState(this.routeId)
       }
     },
   },
   methods: {
     ...mapActions([
-      "changeTurnAndValue",
-      "checkWinner",
-      "chooseTurn",
-      "prepareGameData",
+      'changeTurnAndValue',
+      'checkWinner',
+      'chooseTurn',
+      'prepareGameData',
     ]),
     async setPlayerSign(turn, event) {
-      const target = event.target;
+      const target = event.target
 
-      const rowIndex = target.closest("tr").rowIndex;
-      const cellIndex = target.cellIndex;
+      const rowIndex = target.closest('tr').rowIndex
+      const cellIndex = target.cellIndex
 
-      await this.changeTurnAndValue({ turn, rowIndex, cellIndex });
+      await this.changeTurnAndValue({ turn, rowIndex, cellIndex })
 
-      this.checkWinner({ turn, rowIndex, cellIndex });
+      this.checkWinner({ turn, rowIndex, cellIndex })
     },
   },
   created() {
     if (this.currentGame.rows.length === 0) {
-      this.prepareGameData();
+      this.prepareGameData()
     }
   },
-};
+}
 </script>
 
 <style scoped>
@@ -116,7 +116,7 @@ export default {
 
 .wrapper__cell {
   height: 10.45rem;
-  border: 1px solid #eaeaea;
+  border: 2px solid #eaeaea;
   width: 33.33%;
 }
 

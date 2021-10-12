@@ -23,13 +23,13 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-// import GameData from "./GameData";
-import Table from './Table.vue'
+import GameData from './GameData'
+import Table from '@/components/Table.vue'
 
 export default {
   name: 'Tutorial',
   components: {
-    // GameData,
+    GameData,
     Table,
   },
   data() {

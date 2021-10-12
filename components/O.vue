@@ -27,7 +27,7 @@ export default {
 .circle-component {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: drawCircleComponent 0.5s linear forwards;
+  animation: drawCircleComponent 0.8s linear forwards;
 }
 
 @keyframes drawCircleComponent {
