@@ -1,9 +1,15 @@
+
 <template>
   <div class="container">
-    <div class="row center-xs">
-      <div class="col-xs-12 col-md-8 col-lg-6">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
         <div class="box">
           <Tutorial />
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="result">
+          <GameData />
         </div>
       </div>
     </div>
@@ -11,12 +17,13 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Tutorial from '@/components/Tutorial.vue'
+import GameData from '@/components/GameData.vue'
 
 export default {
   components: {
     Tutorial,
+    GameData,
   },
 }
 </script>
@@ -36,6 +43,10 @@ body {
 
 .box {
   margin: 2rem 0;
+}
+
+.result {
+  margin-top: 6em;
 }
 </style>
 

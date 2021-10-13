@@ -23,7 +23,7 @@
       </tr>
     </table>
 
-    <Popup v-if="!currentGame.turn" title="Start A New Game?">
+    <Popup v-if="!currentGame.turn" title="Tic-tac-toe game">
       <div class="row center-xs">
         <div class="col-xs-12 col-md-6">
           <button
@@ -110,13 +110,14 @@ export default {
 
 <style scoped>
 .wrapper__table {
-  width: 100%;
+  height: 520px;
+  width: 520px;
   border-collapse: collapse;
 }
 
 .wrapper__cell {
   height: 10.45rem;
-  border: 2px solid #eaeaea;
+  border: 3px solid #eaeaea;
   width: 33.33%;
 }
 

@@ -5,7 +5,7 @@
       cx="52.5"
       cy="52.5"
       r="50"
-      stroke="rgb(0,0,0)"
+      stroke="red"
       stroke-width="5"
       fill="none"
       preserveAspectRatio="xMinYMin meet"
@@ -15,8 +15,8 @@
 
 <script>
 export default {
-  name: "O",
-};
+  name: 'O',
+}
 </script>
 
 <style scoped>

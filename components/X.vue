@@ -6,7 +6,7 @@
       y1="0"
       x2="100"
       y2="100"
-      style="stroke: rgb(0, 0, 0); stroke-width: 5"
+      style="stroke: blue; stroke-width: 5"
       preserveAspectRatio="xMinYMin meet"
     />
     <line
@@ -15,7 +15,7 @@
       y1="0"
       x2="0"
       y2="100"
-      style="stroke: rgb(0, 0, 0); stroke-width: 5"
+      style="stroke: blue; stroke-width: 5"
       preserveAspectRatio="xMinYMin meet"
     />
   </svg>
@@ -23,8 +23,8 @@
 
 <script>
 export default {
-  name: "X",
-};
+  name: 'X',
+}
 </script>
 
 <style scoped>
