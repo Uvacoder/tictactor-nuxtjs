@@ -58,4 +58,5 @@ export default {
   generate: {
     dir: 'dist',
   },
+  target: 'static',
 }
